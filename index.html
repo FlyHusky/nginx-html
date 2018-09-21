@@ -40,15 +40,41 @@
     {
         element=document.getElementById('myimage')
        
-       window.alert(element.src)
+      // window.alert(element.src)
         if (element.src.match("a1"))
         {
-            window.alert("a1->a2")
+           // window.alert("a1->a2")
             element.src="/jpg/a2.jpg";
         }
-        else
+        else if(element.src.match("a2"))
         {
-            window.alert("a2->a1")
+           // window.alert("a2->a1")
+            element.src="/jpg/a3.jpg";
+        }
+        else if(element.src.match("a3"))
+        {
+           // window.alert("a2->a1")
+            element.src="/jpg/a4.jpg";
+        }
+        else if(element.src.match("a4"))
+        {
+           // window.alert("a2->a1")
+            element.src="/jpg/a5.jpg";
+        }
+
+        else if(element.src.match("a5"))
+        {
+           // window.alert("a2->a1")
+            element.src="/jpg/a6.jpg";
+        }
+      else if(element.src.match("a6"))
+        {
+           // window.alert("a2->a1")
+            element.src="/jpg/a7.jpg";
+        }
+       else
+        {
+           // window.alert("a2->a1")
             element.src="/jpg/a1.jpg";
         }
     }
@@ -72,7 +98,7 @@
          <center>
            <img id="myimage" onclick="changeImage()" src="jpg/a1.jpg" />               
          </center>
-         
+         <div class="dv2">点击图片-可看到更多照片哦</div>
        
 </body>
 </html>
