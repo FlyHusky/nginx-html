@@ -39,14 +39,17 @@
     function changeImage()
     {
         element=document.getElementById('myimage')
-      
+       
+       window.alert(element.src)
         if (element.src.match("a1"))
         {
+            window.alert("a1->a2")
             element.src="/jpg/a2.jpg";
         }
         else
         {
-            element.src="/jgp/a1.jpg";
+            window.alert("a2->a1")
+            element.src="/jpg/a1.jpg";
         }
     }
 </script>
