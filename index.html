@@ -33,9 +33,24 @@
         vertical-align: middle; 
         text-align: center;
     }
-   
-
 </style>
+
+<script>
+    function changeImage()
+    {
+        element=document.getElementById('myimage')
+        window.alert(element.src)
+        if (element.src.match("1"))
+        {
+            element.src="/jpg/2.jpg";
+            window.alert(1)
+        }
+        else
+        {
+            element.src="/jgp/1.jpg";
+        }
+    }
+</script>
 
 </head>
 <body>
@@ -53,7 +68,7 @@
              <div class="dv2">2018年10月4号(公历) </div>     
          -->
          <center>
-           <img  src="jpg/1.jpg" />               
+           <img id="myimage" onclick="changeImage()" src="jpg/2.jpg" />               
          </center>
          
        
