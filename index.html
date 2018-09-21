@@ -39,15 +39,14 @@
     function changeImage()
     {
         element=document.getElementById('myimage')
-        window.alert(element.src)
-        if (element.src.match("1"))
+      
+        if (element.src.match("a1"))
         {
-            element.src="/jpg/2.jpg";
-            window.alert(1)
+            element.src="/jpg/a2.jpg";
         }
         else
         {
-            element.src="/jgp/1.jpg";
+            element.src="/jgp/a1.jpg";
         }
     }
 </script>
@@ -68,7 +67,7 @@
              <div class="dv2">2018年10月4号(公历) </div>     
          -->
          <center>
-           <img id="myimage" onclick="changeImage()" src="jpg/1.jpg" />               
+           <img id="myimage" onclick="changeImage()" src="jpg/a1.jpg" />               
          </center>
          
        
